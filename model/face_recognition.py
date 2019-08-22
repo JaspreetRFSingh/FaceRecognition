@@ -4,7 +4,7 @@ import cv2
 import os
 import numpy as np
 
-subjects = ["", "Roger Federer", "Arbaaz Khan", "Rafael Nadal"]
+subjects = ["", "Roger Federer", "Arbaz Khan", "Rafa Nadal"]
 
 def detect_face(img):
     
@@ -93,7 +93,7 @@ predicted_img1 = predict(test_img1)
 predicted_img2 = predict(test_img2)
 predicted_img3 = predict(test_img3)
 #predicted_img4 = predict(test_img4)
-print("Prediction complete")
+print("Prediction complete!")
 
 cv2.imshow(subjects[1], cv2.resize(predicted_img1, (400, 500)))
 cv2.imshow(subjects[2], cv2.resize(predicted_img2, (400, 500)))
